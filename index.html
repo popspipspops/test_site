@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+   <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+   <link rel="stylesheet" href="input.css" />
+   <link href="/dist/output.css" rel="stylesheet">
+   <title>APARTS</title>
+</head>
+<body class=" bg-sky-100 text-gray-600">
+
+    <!-- MENU -->
+    <header class="relative h-96">
+        <img class="absolute left-0 top-0 w-full h-full -z-10 object-cover" src="https://images.unsplash.com/photo-1468581264429-2548ef9eb732?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="">
+        <nav class=" bg-sky-100 flex items-center justify-between fixed w-full z-50 md:static">
+            <h1 class=" text-5xl px-4 py-2 z-20 text-purple-900">HESTIA</h1>
+            <ul class=" hidden md:inline-flex items-center text-2xl z-20">
+                <li class="mx-4 menu-item"><a href="">Бронирование</a></li>
+                <li class="mx-4 menu-item"><a href="">Информация</a></li>
+                <li class="mx-4 menu-item"><a href="">Контакты</a></li>
+            </ul>
+            <button class="md:hidden inline-block text-purple-900 text-5xl mr-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- GRADIENT DIV -->
+    <div class="bg-gradient-to-b from-sky-100 to-sky-900">
+
+    <!-- INFORMATION -->
+    <div class="lg:flex">
+        <!-- SLIDER -->
+        <div class="inline-block w-full lg:w-1/2 p-4">
+            <div id="controls-carousel" class="relative" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                     <!-- Item 1 -->
+                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+                        <img src="img/hest1.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
+                        <img src="img/hest2.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
+                        <img src="img/hest3.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out absolute inset-0 transition-all transform" data-carousel-item="">
+                        <img src="img/hest4.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                </div>
+                <!-- Slider controls -->
+                <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev="">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next="">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <div class="inline-block w-full lg:w-1/2 py-6 p-3 text-gray-900">
+            <h2 class="text-4xl mx-auto text-center mb-2">Информация</h2>
+            <p class=" indent-2 p-1">Незабываемый отдых на побережье Балтийского моря в Апарт-Отеле Hestia! Мы предлагаем Вам уютные апартаменты в частном доме с огороженной территорией, на которой расположена зона отдыха для детей и взрослых.</p>
+            <p class=" indent-2 p-1">Во всех апартаментах Вас ждет: </p>
+            <ul class="list-disc p-3">
+                <li>Кухня со всем необходимым, санузел и спальные места</li>
+                <li>Телевизор, фен и другая бытовая техника</li>
+                <li>WI-FI</li>
+                <li>Постельное белье, комплект полотенец (смена по запросу)</li>
+            </ul>
+            <p class=" indent-2 p-1">Дом расположен в 200 метрах от центра уютного курортного городка Зеленоградск. В 5 минутах ходьбы - большой супермаркет, поблизости есть небольшие продуктовые магазины, аптеки, магазины с хоз. товарами.</p>
+        </div>
+    </div>
+
+
+    <!-- CARDS -->
+    <div class="">
+        <div class="py-6 md:grid grid-cols-2 grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-4">
+            <div class=" mx-4 my-2 p-3 grid-item">
+                <img class="mx-auto" src="img/icons/room.png" alt="">
+                <p class=" pt-3 font-bold ">Различные варианты размещения, в зависимости от Ваших потребностей</p>
+            </div>
+            <div class=" mx-4 my-2 p-3 border-4 grid-item">
+                <img class="mx-auto" src="img/icons/sea.png" alt="">
+                <p class=" pt-3 font-bold ">5 минут до моря!</p>
+            </div>
+            <div class=" mx-4 my-2 p-3 border-4 grid-item">
+                <img class="mx-auto" src="img/icons/table.png" alt="">
+                <p class=" pt-3 font-bold ">У нас на территории: беседка, гамак, зона барбекю и еще много всего!</p>
+            </div>
+            <div class=" mx-4 my-2 p-3 border-4 grid-item">
+                <img class="mx-auto flex-none" src="img/icons/airport.png" alt="">
+                <p class=" pt-3 font-bold">Всего 22,5 километра от аэропорта! + трансфер по запросу</p>
+            </div>
+            <div class=" mx-4 my-2 p-3 border-4 grid-item">
+                <img class="mx-auto" src="img/icons/thumbs-up.png" alt="">
+                <p class=" pt-3 font-bold ">Отличный сервис и всегда чистые номера!</p>
+            </div>
+            <div class=" mx-4 my-2 p-3 border-4 grid-item">
+                <img class="mx-auto" src="img/icons/icon-4407826.png" alt="">
+                <p class=" pt-3 font-bold ">Все, что может пригодиться Вам на отдыхе, будет в номере</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="bg-sky-900 text-gray-400">
+
+        <div class="hidden lg:w-1/5 p-4 mx-auto text-7xl text-center">
+            <h3 class=" ">HESTIA</h3>
+        </div>
+
+        <div class=" lg:flex justify-center items-center">
+            <div class="w-full lg:w-2/5 p-4 mx-auto text-lg text-center lg:text-left">
+                <h4 class=" text-4xl mb-5 hover:text-gray-100 transition-all duration-500">Контакты</h4>
+                <p class=" hover:text-gray-100 transition-all duration-500 hover:underline">Адрес: ул. Победы, 17А, Зеленоградск</p>
+                <p class=" hover:text-gray-100 transition-all duration-500 hover:underline">Телефон: <a href="tel:">+7 (963) 294-26-62</a></p>
+                <p class=" hover:text-gray-100 transition-all duration-500 hover:underline">Email: <a href="mail:">example@ex.com</a></p>
+                <p class=" hover:text-gray-100 transition-all duration-500 hover:underline">Часы работы: круглосуточно, с воскресенья по понедельник</p>
+            </div>
+    
+            <!-- MAP -->
+            <!-- ПК -->
+            <div class="hidden lg:inline-block lg:w-2/5 p-4 mx-auto">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A31e73b92f3bc363ab84c03bfef5a376c1e86bfd8c4ed3634455492f24fe087de&amp;width=430&amp;height=290&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <!-- MOBILE -->
+            <div class="w-fit lg:hidden p-4 mx-auto">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A31e73b92f3bc363ab84c03bfef5a376c1e86bfd8c4ed3634455492f24fe087de&amp;width=320&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+
+
+        <div class=" flex-none text-center">
+            © Апарт-Отель "HESTIA", 2022
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>
