@@ -7,160 +7,155 @@
 
 
    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+   <link rel="stylesheet" href="input.css" />
    <link href="output.css" rel="stylesheet">
    <title>APARTS</title>
 </head>
 <body class=" text-gray-600">
 
     <!-- MENU -->
-    <header class="relative">
-        <img class="absolute left-0 top-0 w-full h-full -z-10 object-cover" src="https://images.unsplash.com/photo-1595329003838-e84bddd3bc34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80" alt="">
-        <nav class=" bg-sky-900 flex items-center justify-between fixed w-full z-50 md:h-20 md:static">
-            <h1 class=" text-5xl px-4 py-2 z-20 text-white">HESTIA</h1>
-            <ul class=" hidden md:inline-flex items-center text-white text-2xl z-20">
-                <li class="mx-4 menu-item"><a href="">Бронирование</a></li>
-                <li class="mx-4 menu-item"><a href="">Контакты</a></li>
-            </ul>
-            <button class="md:hidden inline-block text-white text-5xl mr-6">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                  </svg>
-            </button>
-        </nav>
+    <header class="relative h-fit md:h-screen">
+        <img class="absolute left-0 top-0 w-full h-full -z-10 object-cover" src="https://images.unsplash.com/photo-1632230152751-eaed48a6c226?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80" alt="">
+
+
+
+        <nav class="bg-white px-2 sm:px-4 py-2.5 fixed w-full z-50 top-0 left-0 ">
+            <div class="container flex flex-wrap items-center justify-between md:justify-start mx-auto">
+                <h1 class="text-4xl px-4">HESTIA</h1>
+            <div class="flex md:order-2">
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400" aria-controls="navbar-sticky" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+              </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+              <ul class="flex flex-col p-4 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 text-xl">
+                <li>
+                  <a href="#contacts" class="block py-2 px-4 text-gray-700 rounded md:p-0" aria-current="page">Контакты</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 px-4 text-gray-700 rounded md:p-0" aria-current="page">Бронирование</a>
+                  </li>
+              </ul>
+            </div>
+            </div>
+          </nav>
+          
+
+        <div class="text-white bg-sky-900 bg-opacity-50 py-7">
+            <h2 class=" mt-16 px-8 text-center text-4xl md:text-7xl  font-bold">Апарт-отель <span class="">"HESTIA"</span> - семейный отдых на берегу моря!</h2>
+            <h3 class=" mt-4 px-20 text-center  text-2xl">Шум машин делает нас машинами, шум моря – делает нас живыми.</h3>
+        </div>
+
     </header>
 
 
-
     <!-- INFORMATION -->
-    <div class="relative">
- 
-
-        <div class=" w-full lg:w-3/4 mx-auto py-6 p-3 text-gray-900">
-            <div>
-                <img class="bg-img absolute opacity-20 right-0 bottom-0" src="img/icons/bg_pen1.svg" alt="">
+    <section>
+        <div class="relative flex flex-col lg:flex-row py-10  items-center">
+            <div class=" m-3 p-3">
+                <h3 class="text-4xl text-center">Семейный апарт-отель "HESTIA"</h3>
             </div>
-            <p class=" p-1 text-3xl text-center">Незабываемый отдых на побережье Балтийского моря в Апарт-Отеле Hestia! Мы предлагаем Вам уютные апартаменты в частном доме с огороженной территорией, на которой расположена зона отдыха для детей и взрослых.</p>
-            <div>
-                <img class="sm:w-full md:w-3/4 lg:w-1/2 mx-auto" src="img/icons/razd.svg" alt="">
-            </div>
-            <div class="text-3xl">
-                <p class=" p-1 text-center">Во всех апартаментах Вас ждет: </p>
-                <ul class="list-disc p-3">
-                    <li>Кухня со всем необходимым, санузел и спальные места</li>
-                    <li>Телевизор, фен и другая бытовая техника</li>
-                    <li>WI-FI</li>
-                    <li>Постельное белье, комплект полотенец (смена по запросу)</li>
-                </ul>
-            </div>
-            <div>
-                <img class="sm:w-full md:w-3/4 lg:w-1/2 mx-auto" src="img/icons/razd.svg" alt="">
-            </div>
-
-            <p class=" p-1 text-3xl text-center">Дом расположен в 200 метрах от центра уютного курортного городка Зеленоградск. В 5 минутах ходьбы - большой супермаркет, поблизости есть небольшие продуктовые магазины, аптеки, магазины с хоз. товарами.</p>
+                <div class="mx-3 w-3/4">
+                    <h4 class="text-3xl">О нас</h4>
+                    <p class="text-lg py-3">Мы предлагаем Вам уютные апартаменты в частном доме с огороженной территорией. Различные варианты размещения - в зависимости от Ваших нужд. </p>
+                    <hr class="mx-4">
+                    <p class="text-lg py-3">На прилегающей территории расположены зона барбекю и парковка для гостей</p>
+    
+                </div>
+                <div class="mx-3 w-3/4 border p-3">
+                    <h4 class="text-3xl">Во всех апартаментах:</h4>
+                    <ul class="list-disc p-3 text-lg">
+                        <li>Кухня со всем необходимым, санузел и спальные места</li>
+                        <li>Телевизор, холодильник, стиральная машина и другая бытовая техника</li>
+                        <li>WI-FI</li>
+                        <li>Постельное белье, комплект полотенец (смена по запросу)</li>
+                    </ul>
+                </div>
+            <span class="block">
+                <img src="img/hestia_pic.png" class="" style="width: 200px;" alt="hestia_pic">
+            </span>
         </div>
-    </div>
+    </section>
 
 
-    <!-- GRADIENT -->
-    <div class="bg-gradient-to-b from-white to-sky-900">
-            <!-- CARDS -->
-    <div class=" sm:mx-3 md:mx-15 lg:mx-25">
-        <div class="py-6 md:grid grid-cols-2 grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-4 text-xl italic">
-            <div class=" mx-4 my-2 p-3 grid-item">
-                <img class="mx-auto" src="img/icons/room.png" alt="">
-                <p class=" pt-3 font-bold ">Различные варианты размещения</p>
-            </div>
-            <div class=" mx-4 my-2 p-3 border-4 grid-item">
-                <img class="mx-auto" src="img/icons/sea.png" alt="">
-                <p class=" pt-3 font-bold ">5 минут до моря!</p>
-            </div>
-            <div class=" mx-4 my-2 p-3 border-4 grid-item">
-                <img class="mx-auto" src="img/icons/table.png" alt="">
-                <p class=" pt-3 font-bold ">У нас на территории: беседка, гамак, зона барбекю и еще много всего!</p>
-            </div>
-            <div class=" mx-4 my-2 p-3 border-4 grid-item">
-                <img class="mx-auto flex-none" src="img/icons/airport.png" alt="">
-                <p class=" pt-3 font-bold">Всего 22,5 километра от аэропорта! + трансфер по запросу</p>
-            </div>
-            <div class=" mx-4 my-2 p-3 border-4 grid-item">
-                <img class="mx-auto" src="img/icons/thumbs-up.png" alt="">
-                <p class=" pt-3 font-bold ">Отличный сервис и всегда чистые номера!</p>
-            </div>
-            <div class=" mx-4 my-2 p-3 border-4 grid-item">
-                <img class="mx-auto" src="img/icons/icon-4407826.png" alt="">
-                <p class=" pt-3 font-bold ">Все, что может пригодиться Вам на отдыхе, будет в номере</p>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-<div class="w-full bg-sky-900 py-3 -mt-1">
-    <div class=" w-full lg:w-3/4 p-4 mx-auto">
-        <div id="controls-carousel" class="relative" data-carousel="static">
-            <!-- Carousel wrapper -->
-            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                 <!-- Item 1 -->
-                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="active">
-                    <img src="img/hest1.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 2 -->
-                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="">
-                    <img src="img/hest2.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 3 -->
-                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
-                    <img src="img/hest3.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 4 -->
-                <div class="hidden duration-700 ease-in-out absolute inset-0 transition-all transform" data-carousel-item="">
-                    <img src="img/hest1.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        <!-- LOCATION -->
+        <section>
+            <div class="relative static w-3/4 mt-4 mb-4 mx-auto lg:pr-20 h-3/4">
+                <img class=" z-0" src="img/Zelenogradsk_houses.jpeg" alt="">
+                <div class=" bg-white lg:absolute bottom-5 right-0 z-40 md:w-full lg:w-2/3 shadow-2xl overflow-y-auto opacity-0 transition-all ease-in duration-500 " id="location">
+                    <h4 class="text-6xl p-4">Где мы находимся?</h4>
+                    <hr class="mx-16">
+                    <p class="text-lg p-4">Зеленоградск (до 1946 года – Кранц) – старинный город-курорт на побережье Куршской косы в 32 километрах от Калининграда. Наш город - один из немногих в Калининградской области, которым удалось сохранить довоенный прусский облик.</p>
+                    <p class="text-lg p-4">Узкие брусчатые улочки, опрятные фахверковые здания, ухоженные парки, и конечно же, море...</p>
                 </div>
             </div>
-            <!-- Slider controls -->
-            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev="">
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                    <span class="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next="">
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    <span class="sr-only">Next</span>
-                </span>
-            </button>
-        </div>
-    </div>
-</div>
-    </div>
 
+        </section>
 
-
+        <!-- CARDS -->
+        <section>
+            <div class=" my-16 w-4/5 mx-auto">
+                <h2 class="text-center text-6xl">Наши преимущества</h2>
+                <hr class="mx-20 mt-3">
+                <div class="flex justify-center items-center flex-wrap mx-auto">
+                    <div id="grid" class="flex justify-evenly items-center flex-col text-center border rounded-3xl p-4 w-56 mx-4 mt-5 h-80 opacity-0 transition-all ease-in duration-300">
+                        <img class="mx-auto" src="img/icons/boy.png" style="width: 160px;" alt="">
+                        <p class=" pt-2">Для наших маленьких гостей мы предлагаем детский стул и кроватку</p>
+                    </div>
+                    <div id="grid" class="flex justify-evenly items-center flex-col text-center border rounded-3xl p-4 w-56 mx-4 mt-5 h-80 opacity-0 transition-all ease-in duration-300">
+                        <img class="mx-auto" src="img/icons/sport-car.png" style="width: 160px;" alt="">
+                        <p class=" pt-2 self-center">Трансфер из и до аэропорта при необходимости</p>
+                    </div>
+                    <div id="grid" class="flex justify-evenly items-center flex-col text-center border rounded-3xl p-4 w-56 mx-4 mt-5 h-80 opacity-0 transition-all ease-in duration-300">
+                        <img class="mx-auto" src="img/icons/gift-bag.png" style="width: 160px;" alt="">
+                        <p class=" pt-2">Сувениры для Ваших родственников и друзей - прямо в отеле!</p>
+                    </div>
+                    <div id="grid" class="flex justify-evenly items-center flex-col text-center border rounded-3xl p-4 w-56 mx-4 mt-5 h-80 opacity-0 transition-all ease-in duration-300">
+                        <img class="mx-auto" src="img/icons/broom.png" style="width: 160px;" alt="">
+                        <p class=" pt-2">Уборка в номере, смена постельного белья и полотенец по запросу</p>
+                    </div>
+                    <div id="grid" class="flex justify-evenly items-center flex-col text-center border rounded-3xl p-4 w-56 mx-4 mt-5 h-80 opacity-0 transition-all ease-in duration-300">
+                        <img class="mx-auto" src="img/icons/blanket.png" style="width: 160px;" alt="">
+                        <p class=" pt-2">Пляжные пледы для отдыха на море, не переживайте об этом :)</p>
+                    </div>
+                    <div id="grid" class="flex justify-evenly items-center flex-col text-center border rounded-3xl p-4 w-56 mx-4 mt-5 h-80 opacity-0 transition-all ease-in duration-300">
+                        <img class="mx-auto" src="img/icons/supermarket.png" style="width: 160px;" alt="">
+                        <p class=" pt-2">Супермаркет и аптека в 3 минутах ходьбы!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     <!-- REVIEWs -->
-    <div class="relative lg:flex items-center justify-center text-center my-4">
-        <div>
-            <img class="bg-img absolute opacity-20 left-0 bot-0" src="img/icons/bg_pen2.svg" alt="">
+    <section>
+        <div >
+
         </div>
-        <div class="mx-auto">
-            <h3 class="text-center text-4xl m-3">
-                ОТЗЫВЫ
-            </h3>
-        </div>
-        <div class="mx-auto" style="overflow:hidden;position:relative;" id="review"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/14688910633?comments"></iframe><a href="https://yandex.ru/maps/org/apart_otel_hestia/14688910633/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Апарт Отель Hestia на карте Зеленоградска — Яндекс Карты</a></div>
-    </div>
+    </section>
 
 
     <!-- FOOTER -->
-    <footer class="bg-sky-900 text-gray-400">
-
-        <div class="hidden lg:w-1/5 p-4 mx-auto text-7xl text-center">
-            <h3 class=" ">HESTIA</h3>
-        </div>
+    <footer class="bg-sky-900 text-gray-400" id="contacts">
 
         <div class=" lg:flex justify-center items-center">
+            <div class="flex-none text-center">
+                <h1 class="text-5xl p-4">HESTIA</h1>
+            </div>
+
+            <div class="flex justify-center lg:flex-col mx-4 items-center">
+                <a href="" class=" py-4">
+                    <img class="m-4 my-6" src="img/icons/whatsapp (1).png" style="width: 40px;" alt="whatsapp">
+                </a>
+                <a href="">
+                    <img class="m-4 my-6" src="img/icons/telegram.png" style="width: 40px;" alt="telegram">
+                </a>
+                <a href="">
+                    <img class="m-4 my-6" src="img/icons/viber.png" style="width: 40px;" alt="viber">
+                </a>
+
+            </div>
             <div class="w-full lg:w-2/5 p-4 mx-auto text-lg text-center lg:text-left">
                 <h4 class=" text-4xl mb-5 hover:text-gray-100 transition-all duration-500">Контакты</h4>
                 <p class=" hover:text-gray-100 transition-all duration-500 hover:underline">Адрес: ул. Победы, 17А, Зеленоградск</p>
@@ -169,6 +164,7 @@
                 <p class=" hover:text-gray-100 transition-all duration-500 hover:underline">Часы работы: круглосуточно, с воскресенья по понедельник</p>
             </div>
     
+
             <!-- MAP -->
             <!-- ПК -->
             <div class="hidden lg:inline-block lg:w-2/5 p-4 mx-auto">
