@@ -13,7 +13,6 @@ window.onload = () => {
    entries.forEach(entry => {
       if (entry.isIntersecting) {
          const targ = entry.target
-         console.log(targ)
          targ.classList.remove('opacity-0')
          targ.classList.add('opacity-100')
          observer.unobserve(targ)
